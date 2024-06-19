@@ -1,0 +1,12 @@
+def sel_sort(a):
+    n=len(a)
+    for i in range(n-1):
+        mini=i
+        for j in range(i+1,n):
+            if a[j]<a[mini]:
+                mini=j
+                a[i],a[mini]=a[mini],a[i]
+a=[2,4,5,1,8,6]
+sel_sort(a)
+print("sorted array=",a)
+            
